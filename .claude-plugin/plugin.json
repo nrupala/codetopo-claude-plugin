@@ -1,0 +1,15 @@
+{
+  "name": "codetopo",
+  "version": "0.3.5",
+  "description": "Domain-blind code graphs for AI agents: symbols, calls, blast radius, proof-checked snapshots.",
+  "author": {
+    "name": "Nrupal Akolkar",
+    "email": "info@nrupalakolkar.com",
+    "url": "https://github.com/nrupala"
+  },
+  "homepage": "https://aimlds.org/codetopo",
+  "repository": "https://github.com/nrupala/codetopo",
+  "license": "AGPL-3.0-or-later",
+  "keywords": ["code-graph", "static-analysis", "mcp", "symbols", "call-graph"],
+  "mcpServers": "./.mcp.json"
+}
