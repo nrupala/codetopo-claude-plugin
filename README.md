@@ -18,7 +18,7 @@ cargo install codetopo-mcp
 
 **Claude Code:** add this repository as a plugin — it declares the `codetopo` MCP server in `.mcp.json` (`codetopo-mcp` over stdio, no arguments) and ships a skill that teaches the index → search → query loop.
 
-**Claude Desktop:** download `codetopo-0.3.5.mcpb` from this repository and open it (or drag it into Claude Desktop's Extensions). The bundle needs no pre-installed binary: on first run its launcher downloads the pinned build for your platform from the project's GitHub release and refuses to run it unless the SHA-256 matches the pin baked into the bundle.
+**Claude Desktop:** download `codetopo-0.5.0.mcpb` from this repository and open it (or drag it into Claude Desktop's Extensions). The bundle needs no pre-installed binary: on first run its launcher downloads the pinned build for your platform from the project's GitHub release and refuses to run it unless the SHA-256 matches the pin baked into the bundle.
 
 ## Privacy
 
