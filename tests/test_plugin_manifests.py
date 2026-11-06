@@ -75,6 +75,26 @@ class PluginManifestTests(unittest.TestCase):
         self.assertIn(f"codetopo-{version}.mcpb", readme,
                       "README download instructions name a different bundle")
 
+    def test_bundle_internal_manifest_consistent(self):
+        import zipfile
+        version = self.plugin["version"]
+        bundle = ROOT / f"codetopo-{version}.mcpb"
+        with zipfile.ZipFile(bundle) as zf:
+            names = zf.namelist()
+            manifest = json.loads(zf.read("manifest.json"))
+            self.assertEqual(manifest["name"], self.plugin["name"])
+            self.assertEqual(manifest["version"], version,
+                             "bundle manifest version disagrees with plugin.json")
+            self.assertEqual(manifest["license"], self.plugin["license"])
+            entry = manifest["server"]["entry_point"]
+            self.assertIn(entry, names, "bundle server entry point missing")
+            self.assertIn(manifest["icon"], names, "bundle icon missing")
+            pins = json.loads(zf.read("server/pins.json"))
+            self.assertEqual(pins["version"], version,
+                             "bundle pins version disagrees with plugin.json")
+            for platform in pins["platforms"].values():
+                self.assertRegex(platform["sha256"], r"^[0-9a-f]{64}$")
+
     def test_skill_file_matches_plugin(self):
         skill = ROOT / "skills" / self.plugin["name"] / "SKILL.md"
         self.assertTrue(skill.is_file(), f"skill file missing: {skill}")
