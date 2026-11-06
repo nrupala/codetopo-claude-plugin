@@ -1,0 +1,13 @@
+codetopo Claude plugin
+Copyright 2026 Nrupal Akolkar
+
+Licensed under AGPL-3.0-or-later — see the LICENSE file in this repository.
+
+## Third-party components
+
+No third-party components are bundled in this repository. The shipped
+`codetopo-0.5.0.mcpb` bundle contains only this project's own manifest and
+launcher (`server/launcher.js`); at runtime the launcher downloads the pinned
+`codetopo-mcp` build — the codetopo engine, published under the same licence
+from the nrupala/codetopo repository — and verifies its SHA-256 against
+`server/pins.json` before running it.
