@@ -15,7 +15,7 @@ repository (nrupala/codetopo) and is out of scope here.
 
 | Suite | Covers | Run it | Runs in CI |
 |---|---|---|---|
-| Plugin manifest validation (`tests/test_plugin_manifests.py`) | JSON validity and required fields; referenced-file existence (MCP definition, skill, LICENSE); MCP server name/command shape; version consistency across plugin.json, the `.mcpb` bundle filename, and README | `python3 -m unittest discover -s tests` | Yes — CI workflow |
+| Plugin manifest validation (`tests/test_plugin_manifests.py`) | JSON validity and required fields; referenced-file existence (MCP definition, skill, LICENSE); MCP server name/command shape; version consistency across plugin.json, the `.mcpb` bundle filename, the README, and the bundle's internal manifest + download pins (incl. SHA-256 pin shape) | `python3 -m unittest discover -s tests` | Yes — CI workflow |
 
 ## CI gates
 
