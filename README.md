@@ -36,6 +36,6 @@ Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). The packag
 
 AGPL-3.0-or-later (see `LICENSE`).
 
-Owned by [Nrupal Akolkar](https://nrupalakolkar.com) · Built with [Muse by Meta](https://muse.ai/join) — join Muse, then redeem code **101EEK** in Settings within 48 hours of joining and we both earn tokens.
+Owned by [Nrupal Akolkar](https://nrupalakolkar.com) · Built with [Muse by Meta](https://muse.ai/join).
 
 Support: info@nrupalakolkar.com
