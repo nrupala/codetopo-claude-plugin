@@ -24,6 +24,14 @@ cargo install codetopo-mcp
 
 codetopo runs entirely on your machine. It collects no usage data, has no accounts, and sends nothing to the developer or any third party. Repositories you index are parsed locally and never uploaded; index databases and snapshots are files on your disk, kept until you delete them. The one network action is the bundle launcher's first-run download described above. Full text: the Privacy Policy section of the main repository's README.
 
+## Security
+
+Report vulnerabilities privately through GitHub Private Vulnerability Reporting — see [SECURITY.md](SECURITY.md).
+
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). The package's manifests are validated by the test suite described in [TEST-PLAN.md](TEST-PLAN.md).
+
 ## License
 
 AGPL-3.0-or-later (see `LICENSE`).
